@@ -42,7 +42,6 @@ class EstadisticaTest {
 
     @Test
     void varianza() {
-        double[] soluciones = {0,0.8,0,0.8};
         assertEquals(0, p1.varianza(v1));
         assertEquals(0.8, p1.varianza(v2));
         assertEquals(0, p1.varianza(v3));
