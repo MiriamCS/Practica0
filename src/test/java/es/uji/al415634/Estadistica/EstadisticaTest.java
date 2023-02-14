@@ -15,8 +15,8 @@ class EstadisticaTest {
     int[] v3 = {3};
     int[] v4 = {1,2,3,4,5};
     int[] v5 = {};
-    int[][] vectores = {v1,v2,v3,v4,v5};
 
+    boolean excepcionLanzada=false;
     @BeforeEach
     void setUp() {
     }
@@ -31,62 +31,48 @@ class EstadisticaTest {
     }
     @Test
     void media() {
-        System.out.println("\n-----------\nPruebas media:");
-        double[] soluciones = {5,0,3,3};
-        for(int i=0; i< vectores.length; i++){
-            System.out.print("\nconj" + (i+1) +": ");
-            printv(vectores[i]);
-            if(vectores[i].length == 0){
-                System.out.println("\nSe espera una excepcion");
-                try {
-                    p1.media(vectores[i]);
-                } catch(NoSuchElementException e){
-                    System.out.println("Se ha lanzado la excepcion");
-                }
-            }
-            else
-                System.out.println("\nSe espera: " +soluciones[i] + "\nSe ha obtenido: "+ p1.media(vectores[i]));
+        assertEquals(5, p1.media(v1));
+        assertEquals(0, p1.media(v2));
+        assertEquals(3, p1.media(v3));
+        assertEquals(3, p1.media(v4));
+        try {
+            p1.media(v5);
+        } catch(NoSuchElementException e){
+            excepcionLanzada=true;
         }
-
+        assertTrue(excepcionLanzada);
+        excepcionLanzada=false;
     }
+
 
     @Test
     void varianza() {
-        System.out.println("\n-----------\nPruebas varianza:");
         double[] soluciones = {0,0.8,0,0.8};
-        for(int i=0; i< vectores.length; i++){
-            System.out.print("\nconj" + (i+1) +": ");
-            printv(vectores[i]);
-            if(vectores[i].length == 0){
-                System.out.println("\nSe espera una excepcion");
-                try {
-                    p1.varianza(vectores[i]);
-                } catch(NoSuchElementException e){
-                    System.out.println("Se ha lanzado la excepcion");
-                }
-            }
-            else
-                System.out.println("\nSe espera: " +soluciones[i] + "\nSe ha obtenido: "+ p1.varianza(vectores[i]));
+        assertEquals(0, p1.varianza(v1));
+        assertEquals(0.8, p1.varianza(v2));
+        assertEquals(0, p1.varianza(v3));
+        assertEquals(0.8, p1.varianza(v4));
+        try {
+            p1.varianza(v5);
+        } catch(NoSuchElementException e){
+            excepcionLanzada=true;
         }
+        assertTrue(excepcionLanzada);
+        excepcionLanzada=false;
     }
 
     @Test
     void desviacion() {
-        System.out.println("\n-----------\nPruebas desviacion tipica:");
-        double[] soluciones = {0,0.8944271909999159,0,0.8944271909999159};
-        for(int i=0; i< vectores.length; i++){
-            System.out.print("\nconj" + (i+1) +": ");
-            printv(vectores[i]);
-            if(vectores[i].length == 0){
-                System.out.println("\nSe espera una excepcion");
-                try {
-                    p1.desviacion(vectores[i]);
-                } catch(NoSuchElementException e){
-                    System.out.println("Se ha lanzado la excepcion");
-                }
-            }
-            else
-                System.out.println("\nSe espera: " +soluciones[i] + "\nSe ha obtenido: "+ p1.desviacion(vectores[i]));
+        assertEquals(0, p1.desviacion(v1));
+        assertEquals(0.8944271909999159, p1.desviacion(v2));
+        assertEquals(0, p1.desviacion(v3));
+        assertEquals(0.8944271909999159, p1.desviacion(v4));
+        try {
+            p1.desviacion(v5);
+        } catch(NoSuchElementException e){
+            excepcionLanzada=true;
         }
+        assertTrue(excepcionLanzada);
+        excepcionLanzada=false;
     }
 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3afd60ed-e1d0-4e49-8e8a-3cd71621c378" name="Changes" comment="Metodos hechos">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3afd60ed-e1d0-4e49-8e8a-3cd71621c378" name="Changes" comment="Terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/uji/al415634/Estadistica/Estadistica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/uji/al415634/Estadistica/Estadistica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/es/uji/al415634/Estadistica/EstadisticaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/uji/al415634/Estadistica/EstadisticaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <recent name="es.uji.al415634.Estadistica" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.EstadisticaTest">
     <configuration name="EstadisticaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica0" />
       <extension name="coverage">
@@ -79,9 +77,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EstadisticaTest.media" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.uji.al415634.Estadistica.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.uji.al415634.Estadistica" />
+      <option name="MAIN_CLASS_NAME" value="es.uji.al415634.Estadistica.EstadisticaTest" />
+      <option name="METHOD_NAME" value="media" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EstadisticaTest" />
+        <item itemvalue="JUnit.EstadisticaTest.media" />
       </list>
     </recent_temporary>
   </component>
@@ -94,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676360941626</updated>
       <workItem from="1676367469299" duration="63000" />
-      <workItem from="1676367547601" duration="3022000" />
+      <workItem from="1676367547601" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="Metodos hechos">
       <created>1676362120856</created>
@@ -103,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676362120856</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Terminado">
+      <created>1676370786209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676370786209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Metodos hechos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metodos hechos" />
+    <MESSAGE value="Terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminado" />
   </component>
 </project>
