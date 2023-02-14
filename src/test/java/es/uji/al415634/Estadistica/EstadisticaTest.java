@@ -24,11 +24,6 @@ class EstadisticaTest {
     @AfterEach
     void tearDown() {
     }
-    private void printv(int[] vector){
-        for(int i=0; i<vector.length; i++){
-            System.out.print(vector[i]+" ");
-        }
-    }
     @Test
     void media() {
         assertEquals(5, p1.media(v1));
